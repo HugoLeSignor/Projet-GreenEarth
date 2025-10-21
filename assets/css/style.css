@@ -26,6 +26,11 @@ header {
     background-color: white;
 }
 
+footer {
+    background-color: #0A513A;
+    color: white;
+}
+
 /* CLASSE UTILITAIRE */
 
 .container {
@@ -55,12 +60,15 @@ header {
     border-bottom: solid 1px rgba(124, 124, 124, 0.554);
 }
 
+/* ACCUEIL */
+
 /* HEADER */
 
 .header__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
 }
 
 .header__logo {
@@ -90,8 +98,172 @@ header {
     color: black;
 }
 
-/* FOOTER */
+/* HERO */
 
-footer {
-    background-color: #0A513A;
+#hero {
+    display: flex;
+    width: 100%;
+    padding: 8em 0;
+}
+
+#hero img {
+    height: 40vh;
+    border-radius: 2em 0 0 0;
+    box-shadow: 10px 10px 0px #0A513A;
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+}
+
+.hero__content p {
+    font-size: 1.3rem;
+
+}
+
+.hero__content a {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.hero__content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* PROJETS */
+
+#projets {
+    padding: 0;
+}
+
+#projets h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.projets__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 0 8em;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    text-align: left;
+}
+
+.projets__card h3 {
+    font-size: 2rem;
+    padding-bottom: 1em;
+    font-weight: 900;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.projets__card p {
+    font-size: 1.4rem;
+    padding-bottom: 1em;
+}
+
+/* MISSION */
+#mission {
+    background-image: url("../img/farmer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 6em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5em 3em;
+    gap: 3em;
+}
+
+.mission-text {
+    padding: 1em;
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.mission-text p {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.mission-text ul {
+    margin-bottom: 2em;
+    display: grid;
+    padding-left: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em 2em;
+}
+
+.mission-text ul li {
+    font-size: 0.95rem;
+    list-style-type: circle;
+    list-style: #0A513A;
+    padding: 0;
+}
+
+
+.mission-image img {
+    width: 300px;
+    border-radius: 0.8em;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+    font-size: 1.3rem;
+}
+
+.footer__list ul {
+    padding: 0;
+    line-height: 2em;
+}
+
+.footer__list h3 {
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.footer__map {
+    border-radius: 2em;
+    overflow: hidden;
+    height: 100%;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    padding-bottom: 1.5em;
 }
