@@ -37,7 +37,6 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .color-black {
@@ -134,10 +133,6 @@ footer {
 
 /* PROJETS */
 
-#projets {
-    padding: 0;
-}
-
 #projets h2 {
     font-size: 2rem;
     font-weight: 800;
@@ -227,6 +222,8 @@ footer {
     border-radius: 0.8em;
     object-fit: cover;
 }
+
+/* NEWS */
 
 
 /* FOOTER */
