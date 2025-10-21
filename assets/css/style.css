@@ -22,15 +22,6 @@ li {
     list-style-type: none;
 }
 
-header {
-    background-color: white;
-}
-
-footer {
-    background-color: #0A513A;
-    color: white;
-}
-
 /* CLASSE UTILITAIRE */
 
 .container {
@@ -53,15 +44,24 @@ footer {
     border-radius: 1rem;
     padding: 1em;
     font-weight: 600;
+    display: inline-block;
 }
 
-.border-bot {
-    border-bottom: solid 1px rgba(124, 124, 124, 0.554);
+.btn--header {
+    background: linear-gradient(90deg, #0A513A, #749A2B);
 }
 
-/* ACCUEIL */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
 
 /* HEADER */
+.header {
+    background-color: white;
+}
 
 .header__content {
     display: flex;
@@ -70,43 +70,44 @@ footer {
     padding: 0;
 }
 
-.header__logo {
+.header__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: solid 1px rgba(124, 124, 124, 0.554);
 }
 
-.header__logo img {
+.header__logo {
     height: 100px;
 }
 
-.btn-header {
-    background: linear-gradient(90deg, #0A513A, #749A2B);
+.header__nav {
+    border-bottom: solid 1px rgba(124, 124, 124, 0.554);
 }
 
-.header__nav ul {
+.header__nav-list {
     gap: 4rem;
     padding: 1em;
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
-.header__nav li {
+.header__nav-link {
     font-weight: 600;
     font-size: 1.3rem;
     color: black;
 }
 
 /* HERO */
-
-#hero {
+.hero {
     display: flex;
     width: 100%;
     padding: 8em 0;
 }
 
-#hero img {
-    height: 40vh;
+.hero__img {
+    height: 30vh;
     border-radius: 2em 0 0 0;
     box-shadow: 10px 10px 0px #0A513A;
 }
@@ -115,30 +116,27 @@ footer {
     font-size: 2rem;
 }
 
-.hero__content p {
+.hero__text {
     font-size: 1.3rem;
-
 }
 
-.hero__content a {
-    display: inline-block;
+.hero__button {
     margin-top: 1em;
 }
 
-.hero__content h1 {
-    font-size: 5rem;
+.hero__title {
+    font-size: 3rem;
     font-weight: 800;
     margin: 0;
 }
 
-/* PROJETS */
-
-#projets h2 {
+/* PROJECTS */
+.projects__title {
     font-size: 2rem;
     font-weight: 800;
 }
 
-.projets__content {
+.projects__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -147,27 +145,20 @@ footer {
     padding: 0 0 8em;
 }
 
-.card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px 20px;
-    text-align: left;
-}
-
-.projets__card h3 {
+.projects__card-title {
     font-size: 2rem;
     padding-bottom: 1em;
     font-weight: 900;
     border-bottom: 1px solid #e0e0e0;
 }
 
-.projets__card p {
+.projects__card-text {
     font-size: 1.4rem;
     padding-bottom: 1em;
 }
 
 /* MISSION */
-#mission {
+.mission {
     background-image: url("../img/farmer-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -177,7 +168,7 @@ footer {
     align-items: center;
 }
 
-.mission-card {
+.mission__card {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,22 +177,22 @@ footer {
     gap: 3em;
 }
 
-.mission-text {
+.mission__content {
     padding: 1em;
 }
 
-.mission-text h2 {
+.mission__title {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
 }
 
-.mission-text p {
+.mission__text {
     line-height: 1.6;
     margin-bottom: 1.5em;
 }
 
-.mission-text ul {
+.mission__list {
     margin-bottom: 2em;
     display: grid;
     padding-left: 15px;
@@ -209,33 +200,57 @@ footer {
     gap: 0.5em 2em;
 }
 
-.mission-text ul li {
+.mission__list-item {
     font-size: 0.95rem;
     list-style-type: circle;
     list-style: #0A513A;
     padding: 0;
 }
 
-
-.mission-image img {
+.mission__img {
     width: 300px;
     border-radius: 0.8em;
     object-fit: cover;
 }
 
 /* NEWS */
+.news__image {
+    width: 600px;
+    max-height: 300px;
+    border-radius: 1rem;
+}
 
+.news__image--small {
+    width: 100%;
+    max-height: 200px;
+    
+}
+
+.news__article--main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.news__secondary {
+    display: flex;
+    gap: 1rem;
+}
 
 /* FOOTER */
+.footer {
+    background-color: #0A513A;
+    color: white;
+}
+
 .footer__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2em;
-
 }
 
-.footer__list {
+.footer__section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -243,12 +258,13 @@ footer {
     font-size: 1.3rem;
 }
 
-.footer__list ul {
+.footer__nav-list {
     padding: 0;
     line-height: 2em;
+    margin: 0;
 }
 
-.footer__list h3 {
+.footer__title {
     text-decoration: underline;
     font-weight: 800;
     font-size: 2rem;
@@ -258,9 +274,10 @@ footer {
     border-radius: 2em;
     overflow: hidden;
     height: 100%;
+    width: 100%;
 }
 
-.copyright {
+.footer__copyright {
     font-size: 1.2rem;
     padding-bottom: 1.5em;
 }

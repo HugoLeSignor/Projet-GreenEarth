@@ -9,113 +9,157 @@
 </head>
 
 <body>
-    <header id="header">
+    <header class="header">
         <div class="header__content container">
-            <div class="header__logo border-bot">
-                <img src="assets/img/logo-green-earth.png" alt="Logo de la société Green Earth">
-                <a href="" class="btn btn-header color-white">Faire un don</a>
+            <div class="header__top">
+                <img class="header__logo" src="assets/img/logo-green-earth.png" alt="Logo de la société Green Earth">
+                <a href="" class="header__button btn btn--header color-white">Faire un don</a>
             </div>
-            <div class="header__nav border-bot">
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="">A Propos</a></li>
-                        <li><a href="">Articles</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Accueil</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">A Propos</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Articles</a></li>
+                    <li class="header__nav-item"><a href="" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section id="hero" class="container"">
-            <div class=" hero__content">
-            <p class="hero__subtitle">Green Earth</p>
-            <h1>Agissons pour un avenir durable</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illo? Id quod quas nesciunt commodi
-                iste culpa distinctio, odit saepe.
-            </p>
-            <a class="btn color-white" href="">En savoir +</a>
+        <section class="hero container">
+            <div class="hero__content">
+                <p class="hero__subtitle">Green Earth</p>
+                <h1 class="hero__title">Agissons pour un avenir durable</h1>
+                <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, illo? Id quod
+                    quas nesciunt commodi
+                    iste culpa distinctio, odit saepe.
+                </p>
+                <a class="hero__button btn color-white" href="">En savoir +</a>
             </div>
-            <div>
-                <img src="assets/img/hero.jpg" alt="">
-            </div>
-        </section>
-        <section id="projets" class="container">
-            <h2>Nos Projets</h2>
-            <div class="projets__content">
-                <article class="projets__card card">
-                    <h3>Reforestation</h3>
-                    <p>Planter des arbres pour restaurer les écosystèmes et lutter contre le réchauffement climatique.
-                    </p>
-                </article>
-                <article class="projets__card card">
-                    <h3>Nettoyage des océans</h3>
-                    <p>Éliminer les déchets plastiques pour protéger la faune marine.
-                    </p>
-                </article>
-                <article class="projets__card card">
-                    <h3>Énergies renouvelables</h3>
-                    <p>Promouvoir l'utilisation des énergies propres pour un avenir durable.
-                    </p>
-                </article>
-                <article class="projets__card card">
-                    <h3>Protection de la biodiversité</h3>
-                    <p>Préserver les habitats naturels pour protéger les espèces menacées.
-                    </p>
-                </article>
-                <article class="projets__card card">
-                    <h3>Éducation environnemental</h3>
-                    <p>Sensibiliser les communautés à l'imporance de la durabilité et de la conservation.
-                    </p>
-                </article>
-                <article class="projets__card card">
-                    <h3>Gestion des déchets</h3>
-                    <p>Encourager le recyclage et la réduction des déchets pour un environnement plus propre.
-                    </p>
-                </article>
+            <div class="hero__image">
+                <img class="hero__img" src="assets/img/hero.jpg" alt="">
             </div>
         </section>
-        <section id="mission">
-            <div class="card mission-card container">
-                <div class="mission-text">
-                    <h2>Notre mission</h2>
-                    <p>
+        <section class="projects container">
+            <h2 class="projects__title">Nos Projets</h2>
+            <div class="projects__content">
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Reforestation</h3>
+                    <p class="projects__card-text">Planter des arbres pour restaurer les écosystèmes et lutter contre le
+                        réchauffement climatique.
+                    </p>
+                </article>
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Nettoyage des océans</h3>
+                    <p class="projects__card-text">Éliminer les déchets plastiques pour protéger la faune marine.
+                    </p>
+                </article>
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Énergies renouvelables</h3>
+                    <p class="projects__card-text">Promouvoir l'utilisation des énergies propres pour un avenir durable.
+                    </p>
+                </article>
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Protection de la biodiversité</h3>
+                    <p class="projects__card-text">Préserver les habitats naturels pour protéger les espèces menacées.
+                    </p>
+                </article>
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Éducation environnemental</h3>
+                    <p class="projects__card-text">Sensibiliser les communautés à l'imporance de la durabilité et de la
+                        conservation.
+                    </p>
+                </article>
+                <article class="projects__card card">
+                    <h3 class="projects__card-title">Gestion des déchets</h3>
+                    <p class="projects__card-text">Encourager le recyclage et la réduction des déchets pour un
+                        environnement plus propre.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="mission__card card container">
+                <div class="mission__content">
+                    <h2 class="mission__title">Notre mission</h2>
+                    <p class="mission__text">
                         Nous œuvrons pour protéger notre planète en menant des actions concrètes
                         pour la reforestation, la préservation des océans et la lutte contre le
                         changement climatique.
                     </p>
-                    <ul>
-                        <li>Reforestation des zones dégradées</li>
-                        <li>Promotion des énergies renouvelables</li>
-                        <li>Réduction des déchets plastiques</li>
-                        <li>Protection des écosystèmes marins</li>
-                        <li>Sensibilisation des communautés</li>
+                    <ul class="mission__list">
+                        <li class="mission__list-item">Reforestation des zones dégradées</li>
+                        <li class="mission__list-item">Promotion des énergies renouvelables</li>
+                        <li class="mission__list-item">Réduction des déchets plastiques</li>
+                        <li class="mission__list-item">Protection des écosystèmes marins</li>
+                        <li class="mission__list-item">Sensibilisation des communautés</li>
                     </ul>
-                    <a href="#" class="btn color-white">En savoir +</a>
+                    <a href="#" class="mission__button btn color-white">En savoir +</a>
                 </div>
-
-                <div class="mission-image">
-                    <img src="assets/img/img1.jpg" alt="Serre écologique">
+                <div class="mission__image">
+                    <img class="mission__img" src="assets/img/img1.jpg" alt="Serre écologique">
                 </div>
             </div>
         </section>
-        <section id="news" class="container">
-            <h2>Nos dernières actualités</h2>
-            <div>
-                <img src="assets/img/global-warming.jpg" alt="Photo de la fonte des glaciers">
-                <div>
-                    <div>
-                        <a href="">PODCAST</a>
-                        <a href="">DOCUMENT</a>
+        <section class="news container">
+            <h2 class="news__title">Nos dernières actualités</h2>
+            <div class="news__content container">
+                <article class="news__article news__article--main">
+                    <img class="news__image" src="assets/img/global-warming.jpg" alt="Photo de la fonte des glaciers">
+                    <div class="news__article-content card">
+                        <div class="news__tags">
+                            <a href="" class="news__tag">PODCAST</a>
+                            <a href="" class="news__tag">DOCUMENT</a>
+                        </div>
+                        <h3 class="news__article-title">Les effets du changement climatique</h3>
+                        <p class="news__article-text">Comprendre les impacts du réchauffement climatique sur notre
+                            planète.</p>
+                        <a href="" class="news__link">Lire l'article</a>
                     </div>
-                    <h3>Les effets du changement climatique</h3>
-                    <p>Comprendre les impacts du réchauffement climatique sur notre planète.</p>
-                    <a href="">Lire l'article</a>
+                </article>
+                <div class="news__secondary">
+                    <article class="news__article news__article--secondary card">
+                        <img class="news__image news__image--small" src="assets/img/forest.jpg" alt="Forêt vue du ciel">
+                        <div class="news__article-content">
+                            <a href="" class="news__tag">ARTICLE</a>
+                            <h4 class="news__article-title news__article-title--small">La conservation des forêts: un
+                                enjeu crucial</h4>
+                            <p class="news__article-text news__article-text--small">Découvrez comment la préservation
+                                des forêts contribue à la lutte contre le changement
+                                climatique.
+                            </p>
+                            <a href="" class="news__link">Lire l'article</a>
+                        </div>
+                    </article>
+                    <article class="news__article news__article--secondary card">
+                        <img class="news__image news__image--small" src="assets/img/garbage.jpg"
+                            alt="Déchets plastiques">
+                        <div class="news__article-content">
+                            <a href="" class="news__tag">VIDÉO</a>
+                            <h4 class="news__article-title news__article-title--small">Comment réduire vos déchets</h4>
+                            <p class="news__article-text news__article-text--small">Adoptez des gestes simples pour
+                                réduire vos déchets au quotidien.</p>
+                            <a href="" class="news__link">Lire l'article</a>
+                        </div>
+                    </article>
+                    <article class="news__article news__article--secondary card">
+                        <img class="news__image news__image--small" src="assets/img/energy.jpg"
+                            alt="Panneaux solaires et éoliennes">
+                        <div class="news__article-content">
+                            <a href="" class="news__tag">ARTICLE</a>
+                            <h4 class="news__article-title news__article-title--small">Les énergies renouvelables : une
+                                solution pour demain</h4>
+                            <p class="news__article-text news__article-text--small">Explorez comment les énergies
+                                renouvelables peuvent réduire notre dépendance aux combustibles
+                                fossiles.
+                            </p>
+                            <a href="" class="news__link">Lire l'article</a>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div>
-
+            <div class="news__action">
+                <a href="" class="news__button btn color-white">Voir tous les articles</a>
             </div>
         </section>
 
@@ -132,46 +176,46 @@
 
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footer__content container">
-            <div class="footer__list">
-                <h3>A propos</h3>
-                <p>Green Earth est une ONG dédiée à la protection de l'environnement et à la sensibilisation du
+            <div class="footer__section">
+                <h3 class="footer__title">A propos</h3>
+                <p class="footer__text">Green Earth est une ONG dédiée à la protection de l'environnement et à la
+                    sensibilisation du
                     public.
                 </p>
             </div>
-            <div class="footer__list">
-                <h3>Liens Utiles</h3>
-                <nav>
-                    <ul>
-                        <li>A propos</li>
-                        <li>Projets</li>
-                        <li>Campagnes</li>
-                        <li>Blog</li>
-                        <li>Faire un don</li>
+            <div class="footer__section">
+                <h3 class="footer__title">Liens Utiles</h3>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">A propos</li>
+                        <li class="footer__nav-item">Projets</li>
+                        <li class="footer__nav-item">Campagnes</li>
+                        <li class="footer__nav-item">Blog</li>
+                        <li class="footer__nav-item">Faire un don</li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer__list">
-                <h3>Mentions Légales</h3>
-                <nav>
-                    <ul>
-                        <li>Conditions Générales d'Utilisation</li>
-                        <li>Mentions Légales</li>
-                        <li>Politique de confidentialité</li>
+            <div class="footer__section">
+                <h3 class="footer__title">Mentions Légales</h3>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">Conditions Générales d'Utilisation</li>
+                        <li class="footer__nav-item">Mentions Légales</li>
+                        <li class="footer__nav-item">Politique de confidentialité</li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer__map" style="width: 100%"><iframe width="100%" height="300" frameborder="0"
-                    scrolling="no" marginheight="0" marginwidth="0"
+            <div class="footer__map"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
                     src="https://maps.google.com/maps?width=100%%26amp;height=300&amp;hl=en&amp;q=246%20Bd%20Saint-Germain,%2075007%20Paris+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                         href="https://www.mapsdirections.info/it/calcola-la-popolazione-su-una-mappa/">popolazione
                         per
                         regione Italia mappa</a></iframe>
             </div>
-
         </div>
-        <p class="container copyright">&copy; 2025 Green Earth. Tous droits réservés.</p>
+        <p class="footer__copyright container">&copy; 2025 Green Earth. Tous droits réservés.</p>
     </footer>
 </body>
 
