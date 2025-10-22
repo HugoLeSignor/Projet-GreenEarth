@@ -62,6 +62,12 @@ h2 {
     text-align: left;
 }
 
+.form-style {
+    background-color: #F2F3F4;
+    border: none;
+    border-radius: 5px;
+}
+
 /* HEADER */
 .header {
     background-color: white;
@@ -418,6 +424,10 @@ h2 {
     margin: 0;
 }
 
+.footer__nav-item a {
+    color: white;
+}
+
 .footer__title {
     text-decoration: underline;
     font-weight: 800;
@@ -530,7 +540,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-form {
+.cta__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
@@ -538,12 +548,12 @@ form {
     max-width: 1000px;
 }
 
-form label {
+.cta__form-label {
     display: block;
     margin-bottom: 0.5rem;
 }
 
-form input {
+.cta__form-input {
     width: 100%;
     padding: 1rem;
     border: none;
@@ -574,4 +584,89 @@ form input {
     font-size: 1.4rem;
 }
 
-/*  */
+/* CONTACT */
+#contact__banner {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    padding: 1em 0;
+    background: linear-gradient(240deg, #0A513A, #749A2B);
+}
+
+#contact__form {
+    margin: 10em 0;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2em;
+    margin: ;
+}
+
+.contact__form-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+}
+
+.contact__form-content form>input {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    font-size: 1.2rem;
+}
+
+textarea {
+    background-color: #F2F3F4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn-contact {
+    background-color: #0A513A;
+    color: white;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.contact__form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#contact__cta {
+    background-color: #0A513A;
+    color: white;
+    text-align: center;
+    padding: 8em 0;
+    border-bottom: solid 2px white;
+}
+
+.contact__btn-container a {
+    display: inline-block;
+    gap: 2em;
+}
+
+.btn__contact-first {
+    background: linear-gradient(90deg, #0A513A, #749A2B);
+    padding: 1em;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn__contact-second {
+    background-color: #EE732B;
+    padding: 1em;
+    color: white;
+    border-radius: 8px;
+}
+
+/* ARTICLES */
