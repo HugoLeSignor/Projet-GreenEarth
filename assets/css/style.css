@@ -670,3 +670,9 @@ textarea {
 }
 
 /* ARTICLES */
+#articles__banner {
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    background-color: #0A513A;
+}
