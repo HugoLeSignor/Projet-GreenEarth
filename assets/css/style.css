@@ -22,6 +22,11 @@ li {
     list-style-type: none;
 }
 
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
 /* CLASSE UTILITAIRE */
 .container {
     width: 100%;
@@ -130,6 +135,10 @@ li {
 }
 
 /* PROJECTS */
+#projects {
+    margin-top: 5em;
+}
+
 .projects__title {
     font-size: 2rem;
     font-weight: 800;
@@ -213,6 +222,16 @@ li {
 }
 
 /* NEWS */
+#news {
+    margin: 10em 0;
+}
+
+.news__tag {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0.5em 1em;
+}
+
 .news__image {
     width: 50%;
     max-height: 300px;
@@ -261,7 +280,7 @@ li {
 
 /* GALLERY */
 #gallery {
-    margin-bottom: 5em;
+    margin-bottom: 10em;
 }
 
 .gallery__content {
@@ -290,6 +309,77 @@ li {
 .grid__img-3 {
     grid-row: 3;
     grid-column: 1/3
+}
+
+/* VIDEO */
+#video h2 {
+    text-align: right;
+}
+
+#video {
+    margin: 10em 0;
+}
+
+.video__container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.btn__video-container {
+    text-align: center;
+    margin: 4em 0;
+}
+
+.btn__video {
+    display: inline-block;
+    background-color: #EE732B;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+/* DONATION */
+#donation {
+    background-color: #749A2B;
+    color: white;
+}
+
+#donation h2 {
+    margin: 0;
+}
+
+.donation__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.donation__container-btn {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.donation__container-btn a {
+    color: #0A513A;
+}
+
+/* SPONSOR */
+#sponsor {
+    margin: 10em 0;
+}
+
+.sponsor__img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor__img-container img {
+    height: 80px;
 }
 
 /* FOOTER */
