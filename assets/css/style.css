@@ -604,7 +604,6 @@ h2 {
     flex-direction: row;
     width: 100%;
     gap: 2em;
-    margin: ;
 }
 
 .contact__form-content form {
@@ -675,4 +674,9 @@ textarea {
     color: white;
     padding: 1em 0;
     background-color: #0A513A;
+}
+
+.articles_content img {
+    height: 400px;
+    width: 100%;
 }
